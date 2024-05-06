@@ -75,7 +75,7 @@ const rtf = new Intl.RelativeTimeFormat('es-AR', {numeric: "auto"})
 function App() {
     return (
       <main>
-        <h1>El próximo feriado ({nextHoliday.name}) es {rtf.format(diff, "days")}.</h1>
+        <h1>El próximo feriado ({nextHoliday.name}) es {rtf.format(diff, "days")}, el {nextHoliday.date.getDate()}/{nextHoliday.date.getMonth()+1}.</h1>
       </main>
     );
 }
